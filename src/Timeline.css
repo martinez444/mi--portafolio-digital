@@ -1,0 +1,212 @@
+/* =========================================
+   TIMELINE · STEPHANY.DEV
+   Cyberpunk elegante · Sin degradados
+========================================= */
+
+.timeline-seccion {
+  position: relative;
+}
+
+/* Línea vertical del recorrido */
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 900px;
+  margin: 48px auto 0;
+  padding-left: 38px;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 10px;
+  width: 1px;
+  background: var(--borde);
+  content: "";
+}
+
+/* Cada etapa */
+
+.timeline-item {
+  position: relative;
+  min-width: 0;
+}
+
+/* Marcador de la línea */
+
+.timeline-marcador {
+  position: absolute;
+  top: 25px;
+  left: -34px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--cian);
+  border-radius: 50%;
+  background: var(--fondo);
+}
+
+.timeline-marcador span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--cian);
+  box-shadow: 0 0 8px var(--cian);
+}
+
+/* Tarjetas */
+
+.timeline-tarjeta {
+  padding: 25px;
+  border: 1px solid var(--borde);
+  border-left: 2px solid var(--violeta);
+  border-radius: 3px;
+  background: var(--panel);
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.timeline-tarjeta:hover {
+  border-color: var(--cian);
+  box-shadow: 0 0 20px var(--sombra);
+  transform: translateX(4px);
+}
+
+/* Fecha y categoría */
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.timeline-fecha {
+  color: var(--cian);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.timeline-tipo {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid var(--borde);
+  color: var(--texto-secundario);
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.7px;
+  /* Diferenciar formación y experiencia */
+
+  .timeline-tipo-formacion {
+    border-color: var(--violeta);
+    color: var(--violeta);
+  }
+
+  .timeline-tipo-experiencia {
+    border-color: var(--cian);
+    color: var(--cian);
+  }
+}
+
+/* Títulos y descripción */
+
+.timeline-tarjeta h3 {
+  margin: 0 0 9px;
+  color: var(--texto);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.4;
+}
+
+.timeline-lugar {
+  margin: 0 0 15px;
+  color: var(--violeta);
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.timeline-descripcion {
+  margin: 0;
+  color: var(--texto-secundario);
+  font-size: 0.91rem;
+  line-height: 1.8;
+}
+
+/* Etiquetas tecnológicas */
+
+.timeline-etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.timeline-etiquetas span {
+  padding: 6px 9px;
+  border: 1px solid var(--borde);
+  background: var(--fondo-secundario);
+  color: var(--texto);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-tarjeta {
+    transition: none;
+  }
+
+  .timeline-tarjeta:hover {
+    transform: none;
+  }
+}
+
+/* Tablet y móvil */
+
+@media (max-width: 640px) {
+  .timeline {
+    gap: 20px;
+    margin-top: 32px;
+    padding-left: 28px;
+  }
+
+  .timeline::before {
+    left: 7px;
+  }
+
+  .timeline-marcador {
+    left: -28px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .timeline-tarjeta {
+    padding: 19px 16px;
+  }
+
+  .timeline-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .timeline-tarjeta h3 {
+    font-size: 1.08rem;
+  }
+
+  .timeline-descripcion {
+    font-size: 0.88rem;
+  }
+}
