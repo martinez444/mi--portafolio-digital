@@ -5,6 +5,7 @@ Portafolio web personal desarrollado con React y Vite para presentar mis proyect
 ## Tecnologías
 
 - React
+- Python
 - JavaScript
 - CSS
 - Vite
