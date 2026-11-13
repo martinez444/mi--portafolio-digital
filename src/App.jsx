@@ -162,6 +162,51 @@ const tecnologias = [
     Icono: SiFigma,
     color: "#A259FF",
   },
+
+
+  {
+    nombre: "Figma",
+    categoria: "Diseño de interfaces UI/UX",
+    Icono: SiFigma,
+    color: "#A259FF",
+  },
+  {
+    nombre: "Lovable",
+    categoria: "Creación de aplicaciones con IA",
+    Icono: HiOutlineSparkles,
+    color: "#A78BFA",
+  },
+  {
+    nombre: "Agentes de IA",
+    categoria: "Agentes inteligentes y tareas automatizadas",
+    Icono: HiOutlineCpuChip,
+    color: "#A78BFA",
+  },
+  {
+    nombre: "Machine Learning",
+    categoria: "Aprendizaje automático y modelos predictivos",
+    Icono: HiOutlineCpuChip,
+    color: "#A78BFA",
+  },
+  {
+    nombre: "Python para IA",
+    categoria: "Procesamiento y análisis de datos",
+    Icono: SiPython,
+    color: "#3776AB",
+  },
+  {
+    nombre: "Integración de IA",
+    categoria: "Funcionalidades inteligentes en aplicaciones",
+    Icono: HiOutlineSparkles,
+    color: "#A78BFA",
+  },
+  {
+    nombre: "Automatización con IA",
+    categoria: "Automatización de tareas y procesos",
+    Icono: HiOutlineCpuChip,
+    color: "#A78BFA",
+  },
+
 ];
 
 const gruposTecnologias = [
@@ -194,9 +239,9 @@ const gruposTecnologias = [
   },
 
   {
-    titulo: "Herramientas ",
+    titulo: "Herramientas",
     numero: "04",
-    descripcion: "Desarrollo, datos y visualización",
+    descripcion: "Desarrollo, agentes de IA, datos y visualización",
     nombres: [
       "Git",
       "GitHub",
@@ -205,6 +250,11 @@ const gruposTecnologias = [
       "Streamlit",
       "Figma",
       "Lovable",
+      "Agentes de IA",
+      "Machine Learning",
+      "Python para IA",
+      "Integración de IA",
+      "Automatización con IA",
     ],
   },
 ];
